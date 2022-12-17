@@ -22,3 +22,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Additional Information
+This repository is purposed to practise with our team. So, use it wisely.
