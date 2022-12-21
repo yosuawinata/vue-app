@@ -28,6 +28,10 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
   </div>
+  <!-- to display all source data in web view -->
+  <!-- <div>{{ sourceData }}</div> -->
+  <!-- to display data threads only -->
+  <div>{{ threads }}</div>
 </template>
 
 <script>
@@ -41,6 +45,15 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  // don't forget to call sourceData from here to display in web view
+  data () {
+    return {
+      // to display all data (categories, forums, posts, stats, threads, users)
+      // sourceData: sourceData
+      // to display just data threads
+      threads: sourceData.threads
+    }
   }
 }
 </script>
