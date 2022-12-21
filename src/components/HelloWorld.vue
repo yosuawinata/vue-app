@@ -31,6 +31,12 @@
 </template>
 
 <script>
+// import data static using syntaks: import name from 'pathToFile'
+import sourceData from '@/data.json'
+
+// to check what is data soruce success load or not
+console.log(sourceData)
+
 export default {
   name: 'HelloWorld',
   props: {
